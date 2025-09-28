@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyLine - Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">SkyLine</div>
+    <nav>
+      <div class="menu-toggle">&#9776;</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Welcome to SkyLine</h1>
+    <p>Building clean and responsive web designs that look great on any device.</p>
+    <a href="#services" class="btn">Get Started</a>
+  </section>
+
+  <section id="about" class="section about">
+    <h2>About Us</h2>
+    <p>SkyLine is a creative web design brand focused on delivering elegant, user-friendly, and responsive websites. We blend simplicity with style to give businesses a strong digital presence.</p>
+  </section>
+
+  <section id="services" class="section services">
+    <h2>Our Services</h2>
+    <div class="service-boxes">
+      <div class="box">
+        <h3>Web Design</h3>
+        <p>Modern and responsive web designs tailored to your needs.</p>
+      </div>
+      <div class="box">
+        <h3>Development</h3>
+        <p>Clean, optimized, and scalable code for every project.</p>
+      </div>
+      <div class="box">
+        <h3>Branding</h3>
+        <p>Helping you create a unique online identity with style.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Whether you have a project idea, need support, feel free to reach out.</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <div class="contact-links">
+      <p>Or connect with us on:</p>
+      <a href="https://twitter.com/skyline_official">Twitter</a> | 
+      <a href="https://github.com/skyline_official">LinkedIn</a> | 
+      <a href="https://www.linkedin.com/in/skyline-official">GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 SkyLine | Follow us on 
+      <a href="https://twitter.com/skyline_official">Twitter</a> | 
+      <a href="https://github.com/skyline_official">LinkedIn</a> | 
+      <a href="https://www.linkedin.com/in/skyline-official">GitHub</a>
+    </p>
+  </footer>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
